@@ -70,6 +70,15 @@ function App() {
 
     // Zadanie na teraz:
     // 1. Przy uzyciu fetch i metody POST, wyslij dane na serwer
+
+    fetch('http://localhost:5000/messages', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(newMessage)
+    })
+
     // 2*. Przy uzyciu fetch i metody REMOVE usun pojedynczy message z jsona
 
 
@@ -98,7 +107,11 @@ function App() {
     })
 
     setMessages(messagesWithRemovedItem);
-    localStorage.setItem('messages', JSON.stringify(messagesWithRemovedItem));
+
+    fetch(`http://localhost:5000/messages/${idToRemove}`, {
+      method: 'DELETE'
+    })
+    // localStorage.setItem('messages', JSON.stringify(messagesWithRemovedItem));
   }
 
   const removeMessages = () => {

@@ -1,9 +1,29 @@
 {
   "messages": [
     {
-      "id": "123",
-      "author": "Damian",
-      "message": "Kurs ALX jest fajny"
+      "id": "1",
+      "author": "Daniel",
+      "message": "Jest super!!!"
+    },
+    {
+      "id": "4e787b6e-8d7a-4eac-94f7-565542d787a9",
+      "author": "Roman",
+      "message": "bla bla "
+    },
+    {
+      "id": "d471bac3-20fb-4032-8570-d1d905831c89",
+      "author": "Daniel",
+      "message": "TEst3"
+    },
+    {
+      "id": "f40c204f-12eb-4367-848e-88c8620d02a0",
+      "author": "ff",
+      "message": "ff"
+    },
+    {
+      "id": "7d0ad4a8-51ca-4586-a2bc-129ed35188f9",
+      "author": "rr",
+      "message": "rr"
     }
   ]
 }
